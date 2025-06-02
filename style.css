@@ -1,8 +1,27 @@
 @import "tailwindcss";
 
+.cross_btn {
+    display: none;
+}
+
+.fixed_nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    background: #000;
+    height: 80px;
+    padding: 20px;
+}
+
+#container-3 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(23, 37, 84, 0.6));
+
+}
 
 @media (max-width:332px) {
-    #buttons button{
+    #buttons button {
         font-size: 14px;
     }
 }
@@ -25,12 +44,20 @@
         gap: 50px;
     }
 
+    .cross_btn {
+        display: block;
+    }
+
     .hidden_navigation {
         display: none;
     }
 
     .navigation_show_btn {
         display: flex;
+    }
+
+    .cross_btn {
+        color: #99e39e;
     }
 }
 
@@ -60,7 +87,8 @@
     #last_header {
         padding: 0 50px;
     }
-     nav {
+
+    nav {
         padding: 0 50px;
     }
 }
@@ -79,6 +107,7 @@
 
     #last_header {
         width: 100%;
+        height: fit-content;
         justify-content: center;
     }
 
@@ -105,16 +134,66 @@
 }
 
 @media (max-width:925px) {
-    #last_header{
+    #last_header {
         width: 100%;
     }
-     #last_header #left {
+
+    #last_header #left {
         width: 100%;
     }
 }
 
 @media (max-width:724px) {
-    .main_title_of_banner{
+    .main_title_of_banner {
         font-size: 50px;
+    }
+}
+
+
+
+
+@media (max-width:1401px) {
+    #container-3 #inner {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #container-3 #inner #left {
+        width: 100%;
+    }
+
+    #container-3 #inner #left #upper {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #container-3 #inner #left #upper h1:nth-child(2) {
+        width: 100%;
+        align-items: center;
+    }
+    #container-3 #inner #left #lower{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+
+}
+@media (max-width:1170px) {
+    #container-3  {
+        padding: 100px 20px;
+        
+    }
+}
+
+@media (max-width:539px) {
+     #container-3 #inner #left #lower{
+        justify-content: start;
+     }
+}
+@media (max-width:466px) {
+     #container-3 #inner #left #upper h1:nth-child(2) {
+       font-size: 30px;
     }
 }

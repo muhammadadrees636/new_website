@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  .slider {
+    margin-top: 100px;
+    padding: 30px;
+  }
+
+  .swiper {
+    width: 80%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #1e2229;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width:393px) {
+    .swiper {
+      width: 100%;
+    }
+  }
+
+    @media (max-height:490px){
+      .slider {
+        margin-top: 200px;
+      }
+    }
+
+</style>
+
+<body class="to-black   ">
+  <main class=" w-full bg-black ">
+    <header class="h-[100vh] bg-radial from-blue-950  to-black w-full ">
+      <nav class="w-full px-[200px] h-[140px] flex justify-between items-center">
+        <div id=" left_nav" class="w-[170px] h-full flex justify-center items-center">
+          <img class="w-full h-full object-contain object-center" src="./images/logo.svg" alt="">
+        </div>
+        <div id="right_nav" class=" hidden_navigation  right_nav flex justify-center items-center gap-44">
+          <i class="fa-solid fa-xmark sm:text-[#99e39e] cursor-pointer text-3xl absolute top-[30px] right-[30px]  md:text-transparent cross_btn"></i>
+          <div class="navigation  text-[#fff] flex justify-center items-center gap-8 text-lg relative">
+            <a class="hover:text-[#99e39e] transition-all duration-200" href="">Buy & Sell</a>
+            <a class="hover:text-[#99e39e] transition-all duration-200" href="">Development</a>
+            <a class="hover:text-[#99e39e] transition-all duration-200" href="">Work</a>
+            <a class="hover:text-[#99e39e] transition-all duration-200" href="">Portfolio</a>
+            <a class="hover:text-[#99e39e] transition-all duration-200" href="">Upgrade</a>
+            <a class="hover:text-[#99e39e] transition-all duration-200" href="">Docs</a>
+          </div>
+          <div id="buttons" class="flex justify-center items-center gap-8 ">
+            <button class="border-2 border-[#99e39e] rounded-lg px-4 py-2 text-[#99e39e] transition-all duration-150 hover:text-[#333] hover:bg-[#99e39e]">Sign in</button>
+            <button class="border border-[#99e39e] rounded-lg px-4 py-2 text-[#333] hover:text-[#99e39e] transition-all duration-150 bg-[#99e39e] hover:bg-transparent">Sign up</button>
+          </div>
+        </div>
+
+        <div class=" hidden navigation_show_btn cursor-pointer">
+          <i class="fa-solid fa-bars text-[#99e39e] text-2xl "></i>
+        </div>
+      </nav>
+      <div id="last_header" class="px-[200px]  w-full h-[100%]  flex justify-between items-center">
+        <div id="left" class="text-white w-[430px]  h-auto flex justify-start  items-center pt-[80px] flex-col">
+          <div class=" upper_text flex justify-start items-center gap-3 w-full ">
+            <img src="./images/icon-bag.svg" alt="">
+            <h1 class="text-[25px]">Crypto On The <span>Go</span> </h1>
+          </div>
+          <h1 class="main_title_of_banner text-[8vh] font-semibold ">Buy and Sell <span class="text-[#99e39e]">Crypto</span> of your <span class="text-[#99e39e]">choice</span> !</h1>
+          <div id="buttons" class="flex justify-start items-center gap-6 mt-6 w-full px-[10px]">
+            <button class=" cursor-pointer bg-[#99e39e] py-3 px-6 rounded-lg text-[#333] text-[17px] hover:bg-transparent hover:text-white border-2 hover:border-[#99e39e] ">Buy Crypto</button>
+            <button class=" cursor-pointer border-2 border-[#99e39e] py-3 px-6 rounded-lg text-[#99e39e] text-[17px] hover:bg-[#99e39e] hover:text-[#333] transition-all duration-150 ">Sell Crypto</button>
+          </div>
+          <div id="links" class="flex justify-center items-center  gap-12 pt-12 w-full ">
+            <a class="" href=""><img src="./images/applestore.png" alt=""></a>
+            <a href=""><img src="./images/playstore.png" alt=""></a>
+          </div>
+        </div>
+        <div id="right" class=" w-[700px]  h-full  ">
+          <img src="./images/banner-image.png" class="w-full h-full object-po object-contain" alt="">
+        </div>
+      </div>
+    </header>
+
+    <section class="slider">
+      <div class="swiper mySwiper ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide rounded-2xl flex justify-center items-center flex-col  gap-8 text-white p-[20px]">
+            <div id="row" class="  flex justify-between items-center  w-full">
+              <div class=" bg-[#505050] py-[13px] px-[20px] rounded-3xl">
+                <img src="./images/icon-ethereum.svg" alt="">
+              </div>
+              <h1>Ethereum <span class="text-[11px]">ETH/USD</span></h1>
+            </div>
+            <div id="row" class="  flex justify-between items-center gap-9  w-full">
+
+              <h1 id="price" class="font-bold">$3,128.84</h1>
+              <div id="offer" class="text-sm text-red-700">
+                $4.878.26(-35.9%)
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide rounded-2xl flex justify-center items-center flex-col  gap-8 text-white p-[20px]">
+            <div id="row" class="  flex justify-between items-center  w-full">
+              <div class=" bg-[#505050] py-[13px] px-[20px] rounded-3xl">
+                <img src="./images/icon-bitcoin.svg" alt="">
+              </div>
+              <h1>Bitcoin Cash <span class="text-[11px]">BTC/USD</span></h1>
+            </div>
+            <div id="row" class="  flex justify-between items-center gap-9  w-full">
+
+              <h1 id="price" class="font-bold">$3,128.84</h1>
+              <div id="offer" class="text-sm text-red-700">
+                $4.878.26(-35.9%)
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide rounded-2xl flex justify-center items-center flex-col  gap-8 text-white p-[20px]">
+            <div id="row" class="  flex justify-between items-center  w-full">
+              <div class=" bg-[#505050] h-[50px] py-[10px] px-[17px] rounded-3xl">
+                <img src="./images/icon-solana.svg" alt="">
+              </div>
+              <h1>Solana <span class="text-[11px]">SOL/USD</span></h1>
+            </div>
+            <div id="row" class="  flex justify-between items-center gap-9  w-full">
+
+              <h1 id="price" class="font-bold">$3,128.84</h1>
+              <div id="offer" class="text-sm text-red-700">
+                $4.878.26(-35.9%)
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide rounded-2xl flex justify-center items-center flex-col  gap-8 text-white p-[20px]">
+            <div id="row" class="  flex justify-between items-center  w-full">
+              <div class=" bg-[#505050] h-[50px] py-[7px] px-[15px] rounded-3xl">
+                <img src="./images/icon-dogecoin.svg" alt="">
+              </div>
+              <h1>Dogecoin <span class="text-[11px]">DOGE/USD</span></h1>
+            </div>
+            <div id="row" class="  flex justify-between items-center gap-9  w-full">
+
+              <h1 id="price" class="font-bold">$3,128.84</h1>
+              <div id="offer" class="text-sm text-red-700">
+                $4.878.26(-35.9%)
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide rounded-2xl flex justify-center items-center flex-col  gap-8 text-white p-[20px]">
+            <div id="row" class="  flex justify-between items-center  w-full">
+              <div class=" bg-[#505050] py-[13px] px-[20px] rounded-3xl">
+                <img src="./images/icon-litecoin.svg" alt="">
+              </div>
+              <h1>Litecoin <span class="text-[11px]">LTC/USD</span></h1>
+            </div>
+            <div id="row" class="  flex justify-between items-center gap-9  w-full">
+
+              <h1 id="price" class="font-bold">$3,128.84</h1>
+              <div id="offer" class="text-sm text-red-700">
+                $4.878.26(-35.9%)
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./javascripts/script.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        200: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1115: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1643: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+</body>
+
+
+</html>

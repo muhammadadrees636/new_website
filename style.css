@@ -19,9 +19,18 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(23, 37, 84, 0.6));
 
 }
-#container-4{
-    background:linear-gradient(180deg, rgba(23, 37, 84, 0.6), rgba(0, 0, 0, 0.8) );
+
+#container-4 {
+    background: linear-gradient(180deg, rgba(23, 37, 84, 0.6));
 }
+
+#container-5 {
+    background: radial-gradient(circle 600px at bottom right,
+            rgba(23, 37, 84, 1) 50%,
+            rgba(23, 37, 84, 0.6));
+
+}
+
 @media (max-width:332px) {
     #buttons button {
         font-size: 14px;
@@ -174,49 +183,54 @@
         width: 100%;
         align-items: center;
     }
-    #container-3 #inner #left #lower{
+
+    #container-3 #inner #left #lower {
         display: flex;
         width: 100%;
-        justify-content:center;
+        justify-content: center;
         padding: 0;
     }
 
 }
+
 @media (max-width:1170px) {
-    #container-3  {
+    #container-3 {
         padding: 100px 10px;
-        
+
     }
 }
 
 @media (max-width:539px) {
-    #container-3 #inner #left{
+    #container-3 #inner #left {
         gap: 30px;
     }
-     #container-3 #inner #left {
+
+    #container-3 #inner #left {
         width: 100%;
         justify-content: start;
-     }
-#container-3 #inner #left #lower {
-    margin-top: 40px;
-}
     }
+
+    #container-3 #inner #left #lower {
+        margin-top: 40px;
+    }
+}
 
 
 @media (max-width:466px) {
-    
-     #container-3 #inner #left #upper h1:nth-child(2) {
-       font-size: 30px;
-       text-align: center;
+
+    #container-3 #inner #left #upper h1:nth-child(2) {
+        font-size: 30px;
+        text-align: center;
     }
 }
+
 @media (max-width:519px) {
-    
-    #container-3 #inner #left #lower #cart-1{
-       width: 100%;
-       display: flex;
-       justify-content: start;
-       align-items: center;
+
+    #container-3 #inner #left #lower #cart-1 {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
     }
 }
 
@@ -225,27 +239,149 @@
 /* Constainer-4 */
 
 @media (max-width:991px) {
-    #container-4 #image{
+    #container-4 #image {
         height: 600px;
     }
 }
+
 @media (max-width:801px) {
-    #container-4 #image{
+    #container-4 #image {
         height: 500px;
     }
 }
 
 @media (max-width:703px) {
-    
-    #container-3 h1:nth-child(2){
+
+    #container-3 h1:nth-child(2) {
         width: 100% !important;
         font-size: 5vw;
     }
-    
-    #container-4 h1:nth-child(2){
+
+    #container-4 h1:nth-child(2) {
         width: 100%;
         font-size: 4vw;
     }
-    
+
 }
 
+
+/* #container-5 */
+@media (max-width:522px) {
+    #inner_container_5 #right #upper h1:nth-child(1) {
+        width: 100%;
+        font-size: 25px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    #inner_container_5 #right #upper h1:nth-child(2) {
+        width: 100%;
+        padding: 0 10px;
+        text-align: center
+    }
+
+    #inner_container_5 #right #upper p {
+        width: 100%;
+        padding: 0 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width:483px) {
+    #inner_container_5 #right #upper h1:nth-child(1) {
+        font-size: 19px;
+
+    }
+
+    #inner_container_5 #right #upper h1:nth-child(2) {
+        font-size: 25px;
+
+    }
+
+    #inner_container_5 #right #upper p {
+        width: 100%;
+
+    }
+}
+
+
+/* Container-6 */
+
+
+@media (max-width:1401px) {
+    #container-6 #inner {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #container-6 #inner #left {
+        width: 100%;
+    }
+
+    #container-6 #inner #left #upper {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #container-6 #inner #left #upper h1:nth-child(2) {
+        width: 100%;
+        align-items: center;
+    }
+
+
+
+}
+
+@media (max-width:1170px) {
+    #container-6 {
+        padding: 100px 10px;
+
+    }
+}
+
+@media (max-width:539px) {
+    #container-6 #inner #left {
+        gap: 30px;
+    }
+
+    #container-6 #inner #left {
+        width: 100%;
+        justify-content: start;
+    }
+
+    #container-6 #inner #left #lower {
+        margin-top: 40px;
+    }
+}
+
+
+@media (max-width:466px) {
+
+    #container-6 #inner #left #upper h1:nth-child(2) {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width:519px) {}
+
+
+
+@media (max-width:1400px) {
+    #container-6 #inner #left #lower {
+        justify-content: center;
+    }
+}
+
+@media (max-width:427px) {
+    #container-6 #inner #left #lower {
+        justify-content: start;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0;
+    }
+    #container-6 #inner #left #lower #cart-1{
+        width: 100%;
+    }
+}

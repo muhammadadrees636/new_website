@@ -3,6 +3,10 @@
 .cross_btn {
     display: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 .fixed_nav {
     position: fixed;
@@ -10,7 +14,7 @@
     left: 0;
     top: 0;
     z-index: 9;
-    background: #000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(23, 37, 84, 1));
     height: 80px;
     padding: 20px;
 }
@@ -30,7 +34,19 @@
             rgba(23, 37, 84, 0.6));
 
 }
+#container-6 {
+background: radial-gradient(circle 600px at top right,
+            rgba(23, 37, 84, 1) 50%,
+            rgba(23, 37, 84, 0.6))
+            
+}
 
+footer{
+background: linear-gradient(0deg,
+            rgba(23, 37, 84, 1),
+            rgba(23, 37, 84, 0.6));
+
+}
 @media (max-width:332px) {
     #buttons button {
         font-size: 14px;
@@ -378,8 +394,7 @@
     #container-6 #inner #left #lower {
         justify-content: start;
         flex-direction: column;
-        gap: 0px;
-        padding: 0;
+        gap: 10px;
     }
     #container-6 #inner #left #lower #cart-1{
         width: 100%;

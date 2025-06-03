@@ -46,20 +46,20 @@
 
 <body >
   <main class=" w-full bg-[black] ">
-    <header class="h-[100vh] bg-radial from-blue-950  to-black w-full ">
+    <header id="header" class="h-[100vh] bg-radial from-blue-950  to-black w-full ">
       <nav class=" nav w-full px-[200px] h-[140px] flex justify-between items-center">
         <div id=" left_nav" class="w-[170px] h-full flex justify-center items-center">
           <img class="w-full h-full object-contain object-center" src="./images/logo.svg" alt="">
         </div>
-        <div id="right_nav" class=" hidden_navigation  right_nav flex justify-center items-center gap-44">
+        <div id="right_nav" class=" hidden_navigation   right_nav flex justify-center items-center gap-20">
           <i class="fa-solid fa-xmark text-[#99e39e] cursor-pointer text-3xl absolute top-[30px] right-[30px] hidden   cross_btn"></i>
           <div class="navigation  text-[#fff] flex justify-center items-center gap-8 text-lg relative">
-            <a class="hover:text-[#99e39e] transition-all duration-200" href="">Buy & Sell</a>
-            <a class="hover:text-[#99e39e] transition-all duration-200" href="">Development</a>
-            <a class="hover:text-[#99e39e] transition-all duration-200" href="">Work</a>
-            <a class="hover:text-[#99e39e] transition-all duration-200" href="">Portfolio</a>
-            <a class="hover:text-[#99e39e] transition-all duration-200" href="">Upgrade</a>
-            <a class="hover:text-[#99e39e] transition-all duration-200" href="">Docs</a>
+            <a class="hover:text-[#99e39e] transition-all duration-200" href="#header">Buy & Sell</a>
+            <a class="hover:text-[#99e39e] transition-all duration-200" href="#container-4">Development</a>
+            <a class="hover:text-[#99e39e] transition-all duration-200" href="#header">Work</a>
+            <a class="hover:text-[#99e39e] transition-all duration-200" href="#container-5">Portfolio</a>
+            <a class="hover:text-[#99e39e] transition-all duration-200" href="#container-6">Upgrade</a>
+            <a class="hover:text-[#99e39e] transition-all duration-200" href="./doc.html">Docs</a>
           </div>
           <div id="buttons" class="flex justify-center items-center gap-8 ">
             <button class="border-2 border-[#99e39e] rounded-lg px-4 py-2 text-[#99e39e] transition-all duration-150 hover:text-[#333] hover:bg-[#99e39e]">Sign in</button>
@@ -342,7 +342,7 @@
 
     </section>
 
-    <section id="container-6" class="flex justify-center items-center   w-full py-[100px] px-[200px]  bg-gradient-to-tr from-blue-950   to-black">
+    <section id="container-6" class="flex justify-center items-center   w-full py-[100px] px-[200px] ">
       <div id="inner" class="w-full   flex justify-center items-center lg:flex-row md:flex-col-reverse">
         <div id="left" class=" w-[50%]">
           <div id="upper" class="text-white">
@@ -392,6 +392,65 @@
         </div>
       </div>
     </section>
+<footer class="bg-gray-900 text-white py-10 px-4">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+    <!-- Logo & Social -->
+    <div class="space-y-4 md:w-fit w-full  flex justify-center items-center flex-col">
+      <div class="text-3xl font-bold">
+        ✦ <span class="text-white">Cryp</span><span class="text-green-400">go</span>
+      </div>
+      <div class="flex space-x-4">
+        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Links -->
+    <div >
+      <h3 class="text-lg font-semibold mb-4">Links</h3>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li><a href="#" class="hover:text-white">Buy & Sell</a></li>
+        <li><a href="#" class="hover:text-white">Development</a></li>
+        <li><a href="#" class="hover:text-white">Work</a></li>
+        <li><a href="#" class="hover:text-white">Portfolio</a></li>
+        <li><a href="#" class="hover:text-white">Upgrade</a></li>
+        <li><a href="#" class="hover:text-white">Docs</a></li>
+      </ul>
+    </div>
+
+    <!-- Information -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Information</h3>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li><a href="#" class="hover:text-white">Terms</a></li>
+        <li><a href="#" class="hover:text-white">Disclosures</a></li>
+        <li><a href="#" class="hover:text-white">Latest News</a></li>
+      </ul>
+    </div>
+
+    <!-- Subscribe -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Subscribe</h3>
+      <p class="text-sm text-gray-400 mb-4">Subscribe to get the latest news from us</p>
+      <form class="flex flex-col sm:flex-row items-center gap-2">
+        <input type="email" placeholder="Enter Email" class="w-full px-4 py-2 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none">
+        <button type="submit" class="bg-green-400 hover:bg-green-500 p-2 rounded">
+          <i class="fas fa-paper-plane text-black"></i>
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Bottom Note -->
+  <div class="mt-10 text-center text-sm text-gray-400">
+    Distributed by Dees coding studio
+  </div>
+</footer>
+
+
   </main>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./javascripts/script.js"></script>

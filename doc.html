@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+
+<body class="bg-[#000510]">
+  <div>
+    <nav class=" nav w-full px-[200px] h-[140px] flex justify-between items-center">
+      <div id=" left_nav" class="w-[170px] h-full flex justify-center items-center">
+        <img class="w-full h-full object-contain object-center" src="./images/logo.svg" alt="">
+      </div>
+      <div id="right_nav" class=" hidden_navigation   right_nav flex justify-center items-center gap-20">
+        <i class="fa-solid fa-xmark text-[#99e39e] cursor-pointer text-3xl absolute top-[30px] right-[30px] hidden   cross_btn"></i>
+        <div class="navigation  text-[#fff] flex justify-center items-center gap-8 text-lg relative">
+          <a class="hover:text-[#99e39e] transition-all duration-200" href="#header">Buy & Sell</a>
+          <a class="hover:text-[#99e39e] transition-all duration-200" href="#container-4">Development</a>
+          <a class="hover:text-[#99e39e] transition-all duration-200" href="#header">Work</a>
+          <a class="hover:text-[#99e39e] transition-all duration-200" href="#container-5">Portfolio</a>
+          <a class="hover:text-[#99e39e] transition-all duration-200" href="#container-6">Upgrade</a>
+          <a class="hover:text-[#99e39e] transition-all duration-200" href="">Docs</a>
+        </div>
+        <div id="buttons" class="flex justify-center items-center gap-8 ">
+          <button class="border-2 border-[#99e39e] rounded-lg px-4 py-2 text-[#99e39e] transition-all duration-150 hover:text-[#333] hover:bg-[#99e39e]">Sign in</button>
+          <button class="border border-[#99e39e] rounded-lg px-4 py-2 text-[#333] hover:text-[#99e39e] transition-all duration-150 bg-[#99e39e] hover:bg-transparent">Sign up</button>
+        </div>
+      </div>
+
+      <div class=" hidden navigation_show_btn cursor-pointer">
+        <i class="fa-solid fa-bars text-[#99e39e] text-2xl "></i>
+      </div>
+    </nav>
+    <div class=" md:pt-0 pt-12">
+      <div class=" mx-auto lg:max-w-screen-xl md:max-w-screen-md p-6 lg:pt-44 pt-16">
+        <div class="grid grid-cols-12 gap-6">
+          <div class="lg:col-span-3 col-span-12 lg:block hidden">
+            <div class="flex flex-col gap-0.5 mt-4 items-start fixed pe-4 text-[#505050]">
+                <a class=" hover:bg-[#99e39e] hover:text-black py-2.5 hover:bg-primary/20 hover:text-primary dark:hover:text-primary xl:min-w-60 lg:min-w-52 min-w-full px-4 rounded-md text-base font-medium  text-muted text-opacity-60 e" href="#version">Package Versions</a>
+                <a class=" hover:bg-[#99e39e]  hover:text-black py-2.5 hover:bg-primary/20 hover:text-primary dark:hover:text-primary xl:min-w-60 lg:min-w-52 min-w-full px-4 rounded-md text-base font-medium  text-muted text-opacity-60" href="#structure">Pacakge Structure</a>
+                <a class=" hover:bg-[#99e39e]  hover:text-black py-2.5 hover:bg-primary/20 hover:text-primary dark:hover:text-primary xl:min-w-60 lg:min-w-52 min-w-full px-4 rounded-md text-base font-medium  text-muted text-opacity-60" href="#start">Quick Start</a>
+                <a class=" hover:bg-[#99e39e]  hover:text-black py-2.5 hover:bg-primary/20 hover:text-primary dark:hover:text-primary xl:min-w-60 lg:min-w-52 min-w-full px-4 rounded-md text-base font-medium  bg-primary bg-[#99e39e]" href="#configuration">Project Configuration</a></div>
+          </div>
+          <div class="lg:col-span-9 col-span-12">
+            <div id="version" class="md:scroll-m-[180px] scroll-m-28">
+              <div class="flex item-center justify-between">
+                <h3 class=" text-2xl mt-4 font-semibold mb-6 text-white">Pacakge Versions</h3><button class="p-0"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gg text-3xl lg:hidden block" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M22 18.005c0 .55-.446.995-.995.995h-8.01a.995.995 0 0 1 0-1.99h8.01c.55 0 .995.445.995.995M22 12c0 .55-.446.995-.995.995H2.995a.995.995 0 1 1 0-1.99h18.01c.55 0 .995.446.995.995m-.995-5.01a.995.995 0 0 0 0-1.99H8.995a.995.995 0 1 0 0 1.99z"></path>
+                  </svg></button>
+              </div>
+              <div class="w-full flex justify-between lg:gap-0 gap-6 lg:flex-nowrap flex-wrap p-6 rounded-md border border-white ">
+                <div class="lg:w-1/5 md:w-full text-center lg:border-b-0 border-b lg:border-e lg:last:border-e-0 last:border-b-0 border-white"><img alt="npm-package" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" class=" mx-auto w-10 h-10 " src="./images/Categories=Nextjs.9aecd931.svg" style="color: transparent;">
+                  <h5 class="text-2xl font-bold mt-3.5 text-white">v15.0.3</h5>
+                  <p class="text-base font-medium text-muted">NextJs</p>
+                </div>
+                <div class="lg:w-1/5 md:w-full text-center lg:border-b-0 border-b lg:border-e lg:last:border-e-0 last:border-b-0 border-white"><img alt="npm-package" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" class=" mx-auto w-10 h-10 " src="./images/Categories=React.be4d84d5.svg" style="color: transparent;">
+                  <h5 class="text-2xl font-bold mt-3.5 text-white">v18.3.1</h5>
+                  <p class="text-base font-medium text-muted">React</p>
+                </div>
+                <div class="lg:w-1/5 md:w-full text-center lg:border-b-0 border-b lg:border-e lg:last:border-e-0 last:border-b-0 border-white"><img alt="npm-package" loading="lazy" width="41" height="40" decoding="async" data-nimg="1" class=" mx-auto w-10 h-10 " src="./images/Categories=Tailwind.2ab27886.svg" style="color: transparent;">
+                  <h5 class="text-2xl font-bold mt-3.5 text-white">v3.4.1</h5>
+                  <p class="text-base font-medium text-muted">Tailwindcss</p>
+                </div>
+                <div class="lg:w-1/5 md:w-full text-center lg:border-b-0 border-b lg:border-e lg:last:border-e-0 last:border-b-0 border-white"><img alt="npm-package" loading="lazy" width="327" height="361" decoding="async" data-nimg="1" class=" mx-auto w-10 h-10 " src="./images/nextauth.048131a8.png" style="color: transparent;">
+                  <h5 class="text-2xl font-bold mt-3.5 text-white">v4.24.7</h5>
+                  <p class="text-base font-medium text-muted">NextAuth</p>
+                </div>
+                <div class="lg:w-1/5 md:w-full text-center lg:border-b-0 border-b lg:border-e lg:last:border-e-0 last:border-b-0 border-white"><img alt="npm-package" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" class=" mx-auto w-10 h-10 " src="./images/Categories=Typescript.5ddaee6b.svg" style="color: transparent;">
+                  <h5 class="text-2xl font-bold mt-3.5 text-white">v5.6.3</h5>
+                  <p class="text-base font-medium text-muted">Typescript</p>
+                </div>
+              </div>
+              <div class="mt-5 ">
+                <p class="text-base font-medium text-muted text-opacity-60 text-white">Crypgo Tailwind NextJs Template is built with Tailwindcss and Nextjs.</p>
+                <p class="text-base font-medium text-muted text-opacity-60 text-white">These theme is ready to use and you can totally customize as per your requirement.</p>
+                <p class="text-base font-medium text-muted text-opacity-60 text-white">For Customize, You should have knowledge of NextJs, ReactJs, Tailwind and JSX to be able to modify these template.</p>
+              </div>
+            </div>
+            <div class="lg:hidden block fixed top-0 right-0 h-full w-full bg-white dark:bg-dark shadow-lg transform transition-transform duration-300 max-w-xs translate-x-full z-50">
+              <div class="flex items-center justify-between p-4">
+                <h2 class="text-lg font-bold text-midnight_text dark:text-white">Docs Menu</h2><button aria-label="Close mobile menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="dark:text-white">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                  </svg></button>
+              </div>
+              <nav class="px-4">
+                <div class="flex flex-col gap-0.5 mt-4 items-start fixed pe-4"><a class="py-2.5 hover:bg-primary/20 hover:text-primary dark:hover:text-primary xl:min-w-60 lg:min-w-52 min-w-full px-4 rounded-md text-base font-medium  bg-primary text-darkmode" href="#version">Package Versions</a><a class="py-2.5 hover:bg-primary/20 hover:text-primary dark:hover:text-primary xl:min-w-60 lg:min-w-52 min-w-full px-4 rounded-md text-base font-medium  text-muted text-opacity-60" href="#structure">Pacakge Structure</a><a class="py-2.5 hover:bg-primary/20 hover:text-primary dark:hover:text-primary xl:min-w-60 lg:min-w-52 min-w-full px-4 rounded-md text-base font-medium  text-muted text-opacity-60" href="#start">Quick Start</a><a class="py-2.5 hover:bg-primary/20 hover:text-primary dark:hover:text-primary xl:min-w-60 lg:min-w-52 min-w-full px-4 rounded-md text-base font-medium  text-muted text-opacity-60" href="#configuration">Project Configuration</a></div>
+              </nav>
+            </div>
+            <div id="structure" class="md:scroll-m-[130px] scroll-m-28 ">
+              <h3 class="text-2xl font-semibold mt-8 text-white">Pacakge Structure</h3>
+              <div class="rounded-md p-6 pt-3 border border-white mt-6 ">
+                <div class="flex items-center gap-4 text-white">
+                  <h5 class="text-base font-medium text-muted mt-3 mb-1">Crypgo Tailwind NextJs Template</h5>
+                </div>
+                <ul class="ps-0 md:ps-5 list-unstyled text-white">
+                  <li class="py-2">
+                    <div class="flex items-center gap-3">
+                      <p class="text-xl text-white">|—</p><span class="font-medium text-muted "><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                        </svg>packages</span>
+                    </div>
+                    <ul class="ps-5 md:ps-5 list-unstyled">
+                      <li class="py-0">
+                        <ul class="ps-2 ps-md-3 list-unstyled">
+                          <li class="py-2">
+                            <ul class="ps-0 md:ps-5 list-unstyled">
+                              <li class="py-2">
+                                <div class="flex items-center gap-3">
+                                  <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                    </svg>markdown</span>
+                                </div>
+                              </li>
+                              <li class="py-2">
+                                <div class="flex items-center gap-3">
+                                  <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                    </svg>public</span>
+                                </div>
+                              </li>
+                              <li class="py-2">
+                                <div class="flex items-center gap-3">
+                                  <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                    </svg>src</span>
+                                </div>
+                                <div class="flex">
+                                  <div class="flex flex-col justify-between gap-2 mt-2">
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                    <p class="text-xl text-white">|</p>
+                                  </div>
+                                  <ul class="ps-5 md:ps-12 list-unstyled">
+                                    <li class="py-2">
+                                      <div class="flex items-center gap-3">
+                                        <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                          </svg>app</span>
+                                      </div>
+                                      <div class="flex">
+                                        <div class="flex flex-col justify-between gap-2 mt-2">
+                                          <p class="text-xl text-white">|</p>
+                                          <p class="text-xl text-white">|</p>
+                                          <p class="text-xl text-white">|</p>
+                                          <p class="text-xl text-white">|</p>
+                                          <p class="text-xl text-white">|</p>
+                                          <p class="text-xl text-white">|</p>
+                                          <p class="text-xl text-white">|</p>
+                                          <p class="text-xl text-white">|</p>
+                                          <p class="text-xl text-white">|</p>
+                                          <p class="text-xl text-white">|</p>
+                                          <p class="text-xl text-white">|</p>
+                                          <p class="text-xl text-white">|</p>
+                                          <p class="text-xl text-white">|</p>
+                                          <p class="text-xl text-white">|</p>
+                                          <p class="text-xl text-white">|</p>
+                                          <p class="text-xl text-white">|</p>
+                                        </div>
+                                        <ul class="ps-5 md:ps-12 list-unstyled red">
+                                          <li class="py-2">
+                                            <div class="flex items-center gap-3">
+                                              <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                                </svg>(site)</span> <span class="fs-9 text-muted ms-4">(Contains all the pages)</span>
+                                            </div>
+                                            <div class="flex">
+                                              <div class="flex flex-col justify-between gap-2 mt-2">
+                                                <p class="text-xl text-white">|</p>
+                                                <p class="text-xl text-white">|</p>
+                                                <p class="text-xl text-white">|</p>
+                                                <p class="text-xl text-white">|</p>
+                                                <p class="text-xl text-white">|</p>
+                                              </div>
+                                              <ul class="ps-5 md:ps-12 list-unstyled">
+                                                <li class="py-2">
+                                                  <div class="flex items-center gap-3">
+                                                    <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                                      </svg>(auth)</span>
+                                                  </div>
+                                                  <div class="flex">
+                                                    <div class="flex flex-col justify-between gap-1 mt-2">
+                                                      <p class="text-xl text-white">|</p>
+                                                      <p class="text-xl text-white">|</p>
+                                                    </div>
+                                                    <ul class="ps-5 md:ps-12 list-unstyled">
+                                                      <li class="py-2">
+                                                        <div class="flex items-center gap-8">
+                                                          <p class="text-xl text-white">|</p>
+                                                          <div class="flex items-center gap-3">
+                                                            <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                                              </svg>signin</span>
+                                                          </div>
+                                                        </div>
+                                                      </li>
+                                                      <li class="py-2">
+                                                        <div class="flex items-center gap-8">
+                                                          <p class="text-xl text-white">|</p>
+                                                          <div class="flex items-center gap-3">
+                                                            <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                                              </svg>signup</span>
+                                                          </div>
+                                                        </div>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </li>
+                                                <li class="py-2">
+                                                  <div class="flex items-center gap-3">
+                                                    <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                                      </svg>documentation</span>
+                                                  </div>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </li>
+                                          <li class="py-2">
+                                            <div class="flex items-center gap-3">
+                                              <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                                </svg>api</span>
+                                            </div>
+                                            <div class="flex">
+                                              <div class="flex flex-col justify-between gap-2 mt-2">
+                                                <p class="text-xl text-white">|</p>
+                                                <p class="text-xl text-white">|</p>
+                                              </div>
+                                              <ul class="ps-5 md:ps-12 list-unstyled">
+                                                <li class="py-2">
+                                                  <div class="flex items-center gap-8">
+                                                    <p class="text-xl text-white">|</p>
+                                                    <div class="flex items-center gap-3">
+                                                      <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                                          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                                        </svg>auth</span>
+                                                    </div>
+                                                  </div>
+                                                </li>
+                                                <li class="py-2">
+                                                  <div class="flex items-center gap-8">
+                                                    <p class="text-xl text-white">|</p>
+                                                    <div class="flex items-center gap-3">
+                                                      <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                                          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                                        </svg>contex</span>
+                                                    </div>
+                                                  </div>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </li>
+                                          <li class="py-2">
+                                            <div class="flex items-center gap-3">
+                                              <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                                </svg>Context</span>
+                                            </div>
+                                            <div class="flex">
+                                              <div class="flex flex-col justify-between gap-2 mt-2">
+                                                <p class="text-xl text-white">|</p>
+                                              </div>
+                                              <ul class="ps-5 md:ps-12 list-unstyled">
+                                                <li class="py-2">
+                                                  <div class="flex items-center gap-8">
+                                                    <p class="text-xl text-white">|</p>
+                                                    <div class="flex items-center gap-3">
+                                                      <p class="text-xl text-white">|—</p><span class="font-medium text-muted flex items-center flex-wrap"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                                          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                                        </svg>
+                                                        <p class="max-w-12 lg:max-w-full truncate">authDialogContext.tsx</p>
+                                                      </span>
+                                                    </div>
+                                                  </div>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </li>
+                                          <li class="py-2">
+                                            <div class="flex items-center gap-3">
+                                              <p class="text-xl text-white">|—</p><span class="font-medium text-muted">global.css</span>
+                                            </div>
+                                          </li>
+                                          <li class="py-2">
+                                            <div class="flex items-center gap-3">
+                                              <p class="text-xl text-white">|—</p><span class="font-medium text-muted">layout.tsx</span>
+                                            </div>
+                                          </li>
+                                          <li class="py-2">
+                                            <div class="flex items-center gap-3">
+                                              <p class="text-xl text-white">|—</p><span class="font-medium text-muted">not-found.tsx</span>
+                                            </div>
+                                          </li>
+                                          <li class="py-2">
+                                            <div class="flex items-center gap-3">
+                                              <p class="text-xl text-white">|—</p><span class="font-medium text-muted">page.tsx</span>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </li>
+                                    <li class="py-2">
+                                      <div class="flex items-center flex-wrap gap-3">
+                                        <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                          </svg>components</span> <span class="fs-9 text-muted ms-4">(All the Components of this template.)</span>
+                                      </div>
+                                    </li>
+                                    <li class="py-2">
+                                      <div class="flex items-center gap-3">
+                                        <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                          </svg>styles</span>
+                                      </div>
+                                    </li>
+                                    <li class="py-2">
+                                      <div class="flex items-center gap-3">
+                                        <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                          </svg>types</span>
+                                      </div>
+                                    </li>
+                                    <li class="py-2">
+                                      <div class="flex items-center gap-3">
+                                        <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary text-base inline-block me-2" width="1em" height="1em" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"></path>
+                                          </svg>utils</span>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="py-2">
+                                <div class="flex items-center gap-3">
+                                  <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><i class="ti ti-file me-2 text-primary font-bold"></i>next.config.mjs</span>
+                                </div>
+                              </li>
+                              <li class="py-2">
+                                <div class="flex items-center gap-3">
+                                  <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><i class="ti ti-file me-2 text-primary font-bold"></i>postcss.config.mjs</span>
+                                </div>
+                              </li>
+                              <li class="py-2">
+                                <div class="flex items-center gap-3">
+                                  <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><i class="ti ti-file me-2 text-primary font-bold"></i>package.json</span>
+                                </div>
+                              </li>
+                              <li class="py-2">
+                                <div class="flex items-center gap-3">
+                                  <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><i class="ti ti-file me-2 text-primary font-bold"></i>tailwind.config.ts</span>
+                                </div>
+                              </li>
+                              <li class="py-2">
+                                <div class="flex items-center gap-3">
+                                  <p class="text-xl text-white">|—</p><span class="font-medium text-muted"><i class="ti ti-file me-2 text-primary font-bold"></i>tsconfig.json</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="pb-10 md:scroll-m-[180px] scroll-m-28" id="start">
+              <h3 class=" text-white text-2xl font-semibold mt-8">Quick Start</h3>
+              <div class="p-6 rounded-md  border border-white">
+                <h6 class="text-white text-lg font-medium">1. Requirements</h6>
+                <p class="text-base font-medium text-muted text-opacity-60 text-[#6d6d6d]">Before proceeding, you need to have the latest stable <a href="https://nodejs.org/" class="text-primary">node.js</a> </p>
+                <h6 class="mt-4 mb-2 text-white font-medium text-base">Recommended environment:</h6>
+                <ul class="list-disc text-muted text-opacity-60 ps-6 text-[#6d6d6d]">
+                  <li>node js 20+</li>
+                  <li>npm js 10+</li>
+                </ul>
+              </div>
+              <div class="p-6 rounded-md border border-white mt-6 ">
+                <h6 class="text-white text-lg font-medium">2. Install</h6>
+                <p class="text-base font-medium text-muted text-opacity-60">Open package folder and install its dependencies. We recommanded yarn or npm. </p>
+                <h6 class="mt-4 mb-2 text-white text-dark font-medium text-base">1) Install with npm:</h6>
+                <div class="py-4 px-3 rounded-md bg-gray-800">
+                  <p class="text-sm text-gray-400"><span class="text-yellow-500">cd</span> project-folder</p>
+                  <p class="text-sm text-gray-400 mt-2">npm install</p>
+                </div>
+                <h6 class="mt-4 mb-2 text-white text-dark font-medium text-base">1) Install with yarn:</h6>
+                <div class="py-4 px-3 rounded-md bg-gray-800">
+                  <p class="text-sm text-gray-400"><span class="text-yellow-500">cd</span> project-folder</p>
+                  <p class="text-sm text-gray-400 mt-2">yarn install</p>
+                </div>
+              </div>
+              <div class="p-6 rounded-md border border-white mt-6">
+                <h6 class="text-white text-lg font-medium">3. Start</h6>
+                <p class="text-base font-medium text-muted text-opacity-60 mb-4">Once npm install is done now you an run the app.</p>
+                <div class="py-4 px-3 rounded-md bg-gray-800">
+                  <p class="text-sm text-gray-400">npm run dev or yarn run dev</p>
+                </div>
+                <p class="text-base font-medium text-muted text-opacity-60 my-4">This command will start a local webserver <span class="dark:text-white">http://localhost:3000:</span></p>
+                <div class="py-4 px-3 rounded-md bg-gray-800">
+                  <p class="text-sm text-gray-400">&gt; crypgo_project@0.1.0 dev</p>
+                  <p class="text-sm text-gray-400 mt-1">&gt; next dev</p>
+                  <p class="text-sm text-gray-400 mt-6">-Next.js 14.2.4</p>
+                  <p class="text-sm text-gray-400 mt-1">-Local: http://localhost:3000</p>
+                </div>
+              </div>
+              <div class="p-6 rounded-md border border-white mt-6">
+                <h6 class="text-white text-lg font-medium">4. Build / Deployment</h6>
+                <p class="text-base font-medium text-muted text-opacity-60 mb-4 text-white">After adding url run below command for build a app.</p>
+                <div class="py-4 px-3 rounded-md bg-gray-800">
+                  <p class="text-sm text-gray-400">npm run build or yarn build</p>
+                </div>
+                <p class="text-base font-medium text-muted text-opacity-60 mt-6 text-white">Finally, Your webiste is ready to be deployed.🥳</p>
+              </div>
+            </div>
+            <div class="pb-10 md:scroll-m-[180px] scroll-m-28" id="configuration">
+              <h3 class="text-2xl font-semibold mt-4 text-white">Project Configuration</h3>
+              <h3 class=" text-xl font-semibold mt-8 text-white">Colors</h3>
+              <div class="p-6 rounded-md  mt-4 border border-white">
+                <p class="text-base font-medium text-muted text-opacity-60 text-white"><span class="font-semibold text-lg text-white">1. Override Colors</span> <br>For any change in colors : tailwind.config.ts</p>
+                <div class="py-4 px-5 rounded-md bg-gray-800 mt-8">
+                  <p class="text-sm text-gray-400 flex flex-col gap-2"><span>primary: "#99E39E",</span><span>secondary: "#1DC8CD",</span><span>midnight_text: "#263238",</span><span>muted: "#D8DBDB",</span><span>error: "#CF3127",</span><span>warning: "#F7931A",</span><span>light_grey: "#505050",</span><span>grey: "#F5F7FA",</span><span>dark_grey: "#1E2229",</span><span>border: "#E1E1E1",</span><span>success: "#3CD278",</span><span>section: "#737373",</span><span>darkmode: "#000510",</span><span>darklight: "#0C372A",</span><span>dark_border: "#959595",</span><span>tealGreen: "#477E70",</span><span>charcoalGray: "#666C78",</span><span>deepSlate: "#282C36",</span><span>slateGray: "#2F3543",</span></p>
+                </div>
+              </div>
+              <div class="p-6 rounded-md border mt-4 border-white">
+                <p class="text-base font-medium text-muted text-opacity-60"><span class="font-semibold text-lg text-white">2. Override Theme Colors</span> <br>For change , go to : tailwind.config.ts</p>
+                <div class="py-4 px-5 rounded-md bg-gray-800 mt-8">
+                  <p class="text-sm text-gray-400 flex flex-col gap-2"><span>primary: "#2CDD9B",</span><span>secondary: "#1DC8CD",</span></p>
+                </div>
+              </div>
+              <h3 class="text-xl font-semibold mt-8 text-white">Typography</h3>
+              <div class="p-6 rounded-md border mt-4 border-white">
+                <p class="text-base font-medium text-muted text-opacity-60 text-white">1. Change Font family over here : <span class="font-semibold text-base">src/app/layout.tsx</span> </p>
+                <div class="py-4 px-3 rounded-md bg-gray-800 mt-8">
+                  <p class="text-sm text-gray-400 flex flex-col gap-2 mb-3">import { Montserrat } from "next/font/google";</p>
+                  <p class="text-sm text-gray-400 flex flex-col gap-2">const montserrat = Montserrat({ subsets: ["latin"] });</p>
+                </div>
+              </div>
+              <h3 class=" text-xl font-semibold mt-8 text-white">Logo</h3>
+              <div class="p-6 rounded-md border mt-4 border-white text-white">
+                <p class="text-base font-medium text-muted text-opacity-60 flex lg:flex-row flex-col">1. Change Logo over here : <span class="font-semibold text-base overflow-x-auto"> src/components/Layout/Header/Logo/index.tsx</span> </p>
+                <div class="py-4 px-3 rounded-md bg-gray-800 mt-8">
+                  <div class="text-sm text-gray-400">
+                    <p>&lt;Link href="/"&gt;</p>
+                    <p>&lt;Image</p>
+                    <p>src="/images/logo/logo.svg"</p>
+                    <p>alt="logo"</p>
+                    <p>width=160</p>
+                    <p>height=50</p>
+                    <p>quality=100</p>
+                    <p>style={width: "auto", height: "auto"}</p>
+                    <p>/&gt;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="pt-16 bg-darkmode">
+      <div class="container mx-auto lg:max-w-screen-xl md:max-w-screen-md px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-12 lg:gap-20 md:gap-6 sm:gap-12 gap-6  pb-16">
+          <div class="lg:col-span-4 md:col-span-6 col-span-6"><a href="/Crypgo"><img alt="logo" loading="lazy" width="160" height="50" decoding="async" data-nimg="1" style="color:transparent;width:auto;height:auto" src="/Crypgo/images/logo/logo.svg"></a>
+            <div class="flex gap-6 items-center mt-8"><a class="group" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fa6-brands text-white group-hover:text-primary" width="24" height="24" viewBox="0 0 320 512">
+                  <path fill="currentColor" d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8z"></path>
+                </svg></a><a class="group" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fa6-brands text-white group-hover:text-primary" width="24" height="24" viewBox="0 0 448 512">
+                  <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9S287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7s74.7 33.5 74.7 74.7s-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8c-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8s26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9c-26.2-26.2-58-34.4-93.9-36.2c-37-2.1-147.9-2.1-184.9 0c-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9c1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0c35.9-1.7 67.7-9.9 93.9-36.2c26.2-26.2 34.4-58 36.2-93.9c2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6c-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6c-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6c29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6c11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"></path>
+                </svg></a><a class="group" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fa6-brands text-white group-hover:text-primary" width="24" height="24" viewBox="0 0 512 512">
+                  <path fill="currentColor" d="M389.2 48h70.6L305.6 224.2L487 464H345L233.7 318.6L106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"></path>
+                </svg></a></div>
+            <h3 class="text-white text-24 font-medium sm:mt-20 mt-12">2025 Copright | Crypgo</h3>
+            <h3 class="text-white text-24 font-medium sm:mt-20 mt-12">Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a></h3>
+          </div>
+          <div class="lg:col-span-2 md:col-span-3 col-span-6">
+            <h4 class="text-white mb-4 font-medium text-24">Links</h4>
+            <ul>
+              <li class="pb-4"><a class="text-white hover:text-primary text-17" href="/Crypgo#main-banner">Buy &amp; Sell</a></li>
+              <li class="pb-4"><a class="text-white hover:text-primary text-17" href="/Crypgo#development">Development</a></li>
+              <li class="pb-4"><a class="text-white hover:text-primary text-17" href="/Crypgo#work">Work</a></li>
+              <li class="pb-4"><a class="text-white hover:text-primary text-17" href="/Crypgo#portfolio">Portfolio</a></li>
+              <li class="pb-4"><a class="text-white hover:text-primary text-17" href="/Crypgo#upgrade">Upgrade</a></li>
+              <li class="pb-4"><a class="text-white hover:text-primary text-17" href="/Crypgo/documentation#version">Docs</a></li>
+            </ul>
+          </div>
+          <div class="lg:col-span-2 md:col-span-3 col-span-6">
+            <h4 class="text-white mb-4 font-medium text-24">Information</h4>
+            <ul>
+              <li class="pb-4"><a class="text-white hover:text-primary text-17" href="#">Terms</a></li>
+              <li class="pb-4"><a class="text-white hover:text-primary text-17" href="#">Disclosures</a></li>
+              <li class="pb-4"><a class="text-white hover:text-primary text-17" href="#">Disclosures</a></li>
+              <li class="pb-4"><a class="text-white hover:text-primary text-17" href="#">Latest News</a></li>
+            </ul>
+          </div>
+          <div class="lg:col-span-4 md:col-span-4 col-span-6">
+            <h3 class="text-white text-24 font-medium">Subscribe</h3>
+            <p class="text-muted text-opacity-60 text-18 mt-5">Subscribe to get the latest<br> news form us</p>
+            <div class="relative lg:w-80%"><input type="email" id="mail" placeholder="Enter Email" class="bg-transparent border border-white py-4 text-white rounded-lg w-full mt-6 px-6" name="mail" fdprocessedid="wjhjec"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--tabler text-primary absolute right-7 bottom-4" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14L21 3m0 0l-6.5 18a.55.55 0 0 1-1 0L10 14l-7-3.5a.55.55 0 0 1 0-1z"></path>
+              </svg></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./javascripts/script.js"></script>
+</body>
+
+</html>
